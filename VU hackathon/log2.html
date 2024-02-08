@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<link rel="stylesheet" type="text/css" href="log2.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Sign In</h1>
+		<form id="sign-in-form">
+			<input type="tel" id="phone-number" name="phone_number" placeholder="Enter your phone number (+91)" required>
+			<button type="submit">Continue</button>
+		</form>
+	</div>
+    <script>
+	const signInForm = document.getElementById('sign-in-form');
+
+signInForm.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	const phoneNumber = signInForm.elements['phone_number'].value;
+	console.log(`Phone number: ${phoneNumber}`);
+});
+</script>
+</body>
+</html>

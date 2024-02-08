@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scan.css">
+  
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        height: 800px;
+        background-color: rgb(6, 11, 6);
+        color: goldenrod;
+        font-family: "Poppins", sans-serif;
+      }
+      navbar {
+
+
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            height: 80px;
+            z-index: 1000;
+            margin-left:0px ;
+    
+      }
+      .title{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        position: relative;
+        margin-top: -63px;
+        left: 0px;
+    }
+     
+     .title .two{
+        color: #90BF00;
+     }
+      .left {
+        display: flex;
+        font-size: 20px;
+        padding: 10px;
+        
+      }
+      .left img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+      .txt{
+        margin-top: 0.8rem;
+        margin-left: 0.7rem;
+      }
+
+      navbar ul {
+        list-style: none;
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      section {
+        height: 669px;
+        position: relative;
+        top: -140px;
+        left: 149px;
+      }
+     .right ul li a {
+        text-decoration: none;
+        color: white;
+        margin: 0 23px;
+        transition: 1s;
+        transition-delay: 100ms;
+      }
+      .right ul li a:hover {
+        font-size: 1.1rem;
+        color: red;
+      }
+      .right-sub{
+      
+        color: white;
+        height: 300px;
+        display: block;
+        position: absolute;
+       align-items:center ;
+        display: none;
+        width: 140px;
+        filter: opacity(80%);
+        list-style: none;
+        margin-top: 25px;
+        border-radius: 10px;
+        background-color: #262a22;
+        z-index: 1;
+
+        
+        
+      }
+
+        
+       .right-sub ul{
+        list-style: none;
+        }
+        .right-sub ul li{
+          margin-top: 30px;
+          margin-left: 10px;
+        }
+       
+
+
+      
+      .right-sub a{
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .hamb{
+        
+        filter: invert(1);
+        display: none;
+        
+      
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        left: -15px ;
+    
+    
+    }
+      footer{
+        display: flex;
+        justify-content: center;
+        background: #4b4848;
+        height: 20px;
+        position: sticky;
+
+        padding: 20px;
+      }
+      footer div{
+        color: aliceblue;
+        
+      }
+      .copy{
+        filter: invert(1);
+        position: absolute;
+        margin-top: 2px;
+        height: 22px;
+        width: 21px;
+
+      }
+      .f2{
+        margin-left: 30px;
+
+      }
+
+      @media screen and (max-width: 400px) {
+
+        .right {
+          display: none;
+        }
+
+
+        .fif{
+          position: absolute;
+          margin-top: -177px;
+          margin-left: 15px;
+        }
+
+        .right-sub{
+          position: absolute;
+          margin-top: 14px;
+          margin-left: -500px;
+          display: flex;
+      
+        }
+        .hamb{
+          display: flex;
+        }
+        .cross{
+          filter: invert(1);
+          position: absolute;
+          margin-left: 110px;
+          margin-top: -264px;
+        }
+        .rightsec{
+          display: none;
+        }
+        .leftsec{
+          width: 100%;
+          margin-left: 10px;
+        }
+        footer{
+            font-size: 11px;
+        }
+        .copy{
+            height:12px ;
+            width: 12px;
+        }
+        .f2{
+            margin-left: 15px;
+        }
+        
+
+        
+
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <navbar>
+      <div class="left">
+        <img class="hamb" src="hamburg.svg" alt="">
+        <div class="img"><img src="pofileimg.jpeg" alt="no image" ></div>
+           <div class="title txt">
+          <div class="one">कृष</div><div class="two">क</div>
+      </div></div>
+      </div>
+      
+      <div class="right">
+      
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Me</a></li>
+          <li><a href="ContactMe.html">ContactMe</a></li>
+          <li><a href="login.html">login</a></li>
+        </ul>
+        
+
+      </div>
+      
+    </navbar>
+    <div class="right-sub">
+        <img src="cross.svg" class="cross" alt="no icon">
+  
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Me</a></li>
+          <li><a href="ContactMe.html">ContactMe</a></li>
+          <li><a href="signup.html">signup</a></li>
+        </ul>
+  </div>
+  <section>
+    <div class="h1">Upload Image For Scanning</div>
+    <div class="select">
+        <label for="deviceOption">Select from device: </label>
+        <input type="radio" id="deviceOption" name="uploadOption" value="device">
+    </div>
+    <div class="cam">
+        <label for="cameraOption">Use camera: </label>
+        <input type="radio" id="cameraOption" name="uploadOption" value="camera">
+    </div>
+    <div class="but">
+      <button  id="selectButton">SELECT</button>
+    </div>
+
+  
+
+    <!-- Hidden input for file upload -->
+    <input type="file" accept="image/*" id="fileInput" style="display: none;">
+
+    <!-- Modal dialog for camera access -->
+    <div id="cameraModal" class="modal">
+        <div class="modal-content">
+            <video id="cameraPreview" autoplay playsinline></video>
+            <button id="closeCameraModal">Close</button>
+        </div>
+    </div>
+    
+   
+  </section>
+  <Footer>
+   <div style="margin-right: 10px;">All </div> </div><div><img src="copyright.svg" class="copy"  alt=""> </div>      <div class="f2" >rights reserved by JustAtharav</div> 
+  </Footer>
+    <script src="script.js"></script>
+    
+  </body>
+</html>

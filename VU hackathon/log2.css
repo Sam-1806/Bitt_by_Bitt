@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f5f5f5;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 24px;
+	width: 100%;
+	max-width: 320px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+input[type="tel"] {
+	background-color: #f5f5f5;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	padding: 12px;
+	width: 100%;
+}
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 16px;
+	padding: 12px;
+	margin-top: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+@media screen and (min-width: 400px) {
+	.container {
+		padding: 32px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	input[type="tel"] {
+		font-size: 20px;
+		padding: 16px;
+	}
+
+	button {
+		font-size: 20px;
+		padding: 16px;
+		margin-top: 24px;
+	}
+}
